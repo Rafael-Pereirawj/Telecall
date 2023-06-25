@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark-mode">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Estilo Customizado -->
+  <link rel="stylesheet" href="testepedro/CESS.css/num.css">
+
+  <!-- Logo do Site-->
+  <link rel="shortcut icon" href="testepedro/img/logo.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/b2c6b6e86f.js" crossorigin="anonymous"></script>
+
+  <!-- Título do Site-->
+  <title>Número Máscara</title>
+
+</head>
+
+<body id="content">
+  <!-- Início do cabeçalho -->
+  <header>
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+
+        <a href="index.html" class="navbar-brand">
+          <img src="testepedro/img/logotele-removebg-preview.png" width="142px">
+        </a>
+        <div>
+          <button type="button" id="btnAumentar" onclick="this">A+</button>
+          <button type="button" id="btnDiminuir" onclick="this">A-</button>
+        </div>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="2FA.html" class="nav-link">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a href="numero.html" class="nav-link">Número Máscara</a>
+            </li>
+            <li class="nav-item">
+              <a href="sms.html" class="nav-link">Sms programável</a>
+            </li>
+            <li class="nav-item">
+              <a href="verified.html" class="nav-link">google Verified Calls</a>
+            </li>
+            
+            <li class="nav-item" id="login3">
+              <a href="cadastro.html" class="btn btn-outline-light ml-4">Login</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div style="display: flex;">
+        <h2 class="logado" id="logado"></h2>
+        
+        <i onclick='sair()' class="fa-solid fa-right-from-bracket Sair" style="color: #f0ffff; font-size: 1.4em;"></i>
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- Fim do cabeçalho -->
+
+  <!--Início da seção-->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <h1 id="agaum">Número Máscara</h1>
+        <div id="titulo" class="elementor-divider"></div>
+        <!--Início dos textos-->
+        <div class="col-md-6 d-flex teste">
+          <div class="align-self-center">
+            <p><b>Proteja identidades profissionais</b>
+              <br>
+              Garanta aos seus clientes a capacidade de fazer chamadas e enviar
+              mensagens sem expor seus números de telefone pessoais<br>
+            </p>
+
+            <ul>
+              <li><b>Mascare um número</b> de telefone para interações com mais
+                privacidade.</li>
+              <li><b>Permite</b> que empresas façam negócios usando menos
+                números de telefone.</li>
+              <li><b>Oferece</b> uma experiência mais segura e profissional.
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <!--Imagem da seção-->
+        <div class="col-md-6 d-none d-md-block">
+          <img src="testepedro/img/sms-removebg-preview.png" class="img-fluid" width="200px" height="200px"
+            style="margin-left: 125px;">
+          <img class="iemig" src="testepedro/img/logotele-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Fim da seção-->
+  <hr class="hr">
+
+  <section class="caixa">
+    <div class="container">
+      <h2 id="agadois">Como Funciona?</h2>
+      <div class="elementor-divider"></div>
+      <div class="row">
+
+
+
+        <div class="col-md-4">
+          <p class="teste"><b>Usuário faz uma
+              chamada através
+              de um aplicativo.
+            </b></p>
+          <img src="testepedro/img/tia.jpg" class="img-fluid" alt="">
+          <p class="teste">Ex: usuário liga para o
+            entregador ou motorista
+            de taxi ou entra em
+            contato com a central de
+            atendimento.</p>
+        </div>
+        <div class="col-md-4">
+          <p><b>Plataforma
+              mascara o número
+              original.</b></p>
+          <img src="testepedro/img/nuvem.jpg" class="img-fluid" alt="">
+          <p class="teste">A plataforma recebe a
+            chamada e mascara o
+            número antes de conectar
+            com o destinatário.
+          </p>
+
+        </div>
+        <div class="col-md-4">
+          <p><b>Ambas as partes
+              são conectadas.</b></p>
+          <img src="testepedro/img/tia2.jpg" class="img-fluid" alt="">
+          <p class="teste">A plataforma conecta ambas
+            as partes mantendo a
+            privacidade dos dois.
+          </p>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="caixa">
+    <div class="container">
+      <h2 id="agadois">Quem usa?</h2>
+      <div class="elementor-divider"></div>
+      <div class="row">
+
+
+
+
+        <div class="col-md-3">
+          <img src="testepedro/img/taxi.jpeg" class="img-fluid">
+          <p class="teste"><b>Apps de Transporte</b> <br>
+            Permite que motorista e
+            passageiro se comuniquem
+            sem compartilhar seus
+            números pessoais.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="testepedro/img/celular.jpeg" class="img-fluid" alt="">
+          <p class="teste"><b>Apps de Relacionamento</b> <br>
+            Permite uma maneira
+            privada e segura para
+            usuários interagirem sem
+            expor contatos pessoais.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="testepedro/img/carrinho.jpeg" class="img-fluid" alt="">
+          <p class="teste"> <b>E-Commerce</b><br>
+            Permite que clientes
+            entrem em contato através
+            do aplicativo. Podem
+            também integrar chamadas
+            internacionais.
+          </p>
+
+        </div>
+        <div class="col-md-3">
+          <img src="testepedro/img/caminhao.jpeg" class="img-fluid" alt="">
+          <p class="teste"> <b>Entregas & Logística</b> Mantenha seu cliente
+            informado sobre
+            entregas e serviços, tire
+            dúvidas, etc
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <hr class="hr">
+
+  <footer class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" style="color: dimgray; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
+          Copyright © 2023 | Pedro,Jefferson,Rafael. Todos os direitos reservados.</div>
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/TelecallBr" class="btn btn-outline-dark ">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/telecallbr/" class="btn btn-outline-dark ">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/telecall/" class="btn btn-outline-dark ">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+  <style>
+    .darkmode-toggle {
+      font-size: 45px !important;
+      width: 23px !important;
+      height: 23px !important;
+    }
+  </style>
+
+
+  <script>
+
+
+
+    const options = {
+      bottom: '64px',
+      right: '32px',
+      left: 'unset',
+      time: '0.5s',
+      mixColor: '#fff',
+      backgroundColor: '#fff',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
+      saveInCookies: false,
+      label: '🌓',
+      autoMatchOsTheme: true
+    }
+
+    function addDarkmodeWidget() {
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+
+      const darkmodeWidget = document.querySelector('.darkmode-toggle');
+      darkmodeWidget.style.position = 'fixed';
+      darkmodeWidget.style.bottom = '12.6%';
+      darkmodeWidget.style.right = '42px';
+      darkmodeWidget.style.zIndex = '9999';
+    }
+
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="testepedro/js/fonte.js"></script>
+  <script src="JavaScript/cadastro.js"></script>
+     <script src="JavaScript/teste.js"></script>
+
+</body>

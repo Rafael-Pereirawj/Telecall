@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark-mode">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Estilo Customizado -->
+  <link rel="stylesheet" href="testepedro/CESS.css/staiou.css">
+  
+  <!-- ícone Logo-->
+  <link rel="shortcut icon" href="testepedro/img/logo.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/b2c6b6e86f.js" crossorigin="anonymous"></script>
+
+  <!-- Título do Site-->
+  <title>Plataforma CpaaS</title>
+
+</head>
+
+<body id="content">
+  <!-- Início do cabeçalho -->
+  <header>
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+
+        <a href="index.html" class="navbar-brand">
+          <img src="testepedro/img/logotele-removebg-preview.png" width="142px">
+        </a>
+        <div>
+          <button type="button" id="btnAumentar" onclick="this">A+</button>
+          <button type="button" id="btnDiminuir" onclick="this">A-</button>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="2FA.html" class="nav-link">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a href="numero.html" class="nav-link">Número Máscara</a>
+            </li>
+            <li class="nav-item">
+              <a href="sms.html" class="nav-link">Sms programável</a>
+            </li>
+            <li class="nav-item">
+              <a href="verified.html" class="nav-link">google Verified Calls</a>
+            </li>
+           
+
+           
+            <li class="nav-item" id="login3">
+              <a href="cadastro.html" class="btn btn-outline-light ml-4">Login</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div style="display: flex;">
+        <h2 class="logado" id="logado"></h2>
+        
+        <i onclick='sair()' class="fa-solid fa-right-from-bracket Sair" style="color: #f0ffff; font-size: 1.4em;"></i>
+      </div>
+
+
+    </nav>
+
+  </header>
+  <!-- Fim do cabeçalho -->
+
+
+
+  <!--Início da seção-->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+
+        <!-- Início textos da seção-->
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <img src="testepedro/img/modavo.png">
+            <h1 class="display-4">CpaaS Platform</h1>
+            <pre class="pedro">
+Flexível.
+Autêntico.
+Seguro.
+            </pre>
+
+            <form class="mt-4 mb-4">
+              <div class="input-group input-group-lg">
+                
+
+                <div class="input-group-append">
+                  <a href="cadastro.html">
+                  <button type="button" class="btn btn-primary">Cadastre-se
+                  </button>
+                </a>
+                </div>
+              </div>
+            </form>
+            <p class="disponivel">Disponível para:
+              <a href="https://www.android.com/intl/pt-BR_br/" class="btn btn-outline-dark ">
+                <i class="fab fa-android fa-lg"></i>
+              </a>
+              <a href="https://www.apple.com/br/" class="btn btn-outline-dark ">
+                <i class="fab fa-apple fa-lg"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <!--Fim Textos da seção-->
+
+        <!--Imagem da seção-->
+        <div class="col-md-6 d-none d-md-block">
+          <img src="testepedro/img/imagemhome.png" width="620px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fim da seção-->
+  <!-- Início seção CpaaS 1-->
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h2>O que é CPaaS?</h2>
+
+            <h3> O futuro da comunicação já chegou.</h3>
+            <p class="teste">O CPaaS (Plataforma de Comunicação como Serviço)
+              é a solução perfeita para o seu negócio. O serviço oferece a
+              estrutura completa para que canais de comunicação como mensagens de texto SMS,
+              chamadas de vídeo e de voz,
+              e-mail, e outros, estejam integrados de forma fácil nos sistemas das empresas através de APIs que se
+              conectam
+              à plataforma Modavo.</p> <br><br>
+
+            <h2>Como funciona ?</h2>
+            <p class="teste"> Nossa <a href="https://cpaasapi.telecall.com.br/swagger/index.html"><span class="teste">API</span></a> permitem que as
+              empresas expandam suas ofertas sem a necessidade de hardware ou software adicional.
+            </p>
+            <a href="https://cpaasapi.telecall.com.br/swagger/index.html" class="btn btn-primary">Veja mais</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <img src="testepedro/img/modavo2.jpg" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- Fim seção CpaaS 1-->
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="testepedro/img/modavo3.png" class="img-fluid">
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h2>CPaaS e a Transformação Digital</h2>
+            <p class="teste">
+              85% dos profissionais se conectam de
+              maneira diferente com colegas e clientes do que
+              faziam há apenas 5 anos. <br>
+              As receitas de CPaaS estão crescendo mais de
+              40% ao ano. <br>
+              CPaaS já ultrapassou o mercado de UCaaS
+              (Unified Communication as a Service). <br>
+              Expectativa de crescimento estimado de
+              $ 8,2 bilhões em 2021 <br>
+              Marcas que estão em múltiplos canais <br>
+              melhoram a experiência do usuário e aumentam
+              seus resultados.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--Fim seção CpaaS 1-->
+  <div class="espaco">
+    <p class="espacotext teste">O CPaaS, com sua escalabilidade, flexibilidade, autenticação e segurança aprimoradas, está
+      revolucionando o
+      modo como as empresas habilitadas em nuvem implementam comunicações de voz, SMS e vídeo.</p>
+  </div>
+  </section>
+
+  <!-- Início seção CpaaS 2--> <br>
+  <h2 class="servicos">serviços</h2>
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <a class="problema" href="2FA.html">
+            <img src="testepedro/img/cadeado.png" width="200px" height="200px" alt="">
+            <H4>2FA</H4>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="dois" href="https://modavo.com.br/produtos/conversor/">
+            <img src="testepedro/img/conversor.png" class="img-fluid" alt="">
+            <H4>Conversor</H4>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="dois" href="numero.html">
+            <img src="testepedro/img/numeromascara.png" class="img-fluid" alt="">
+            <H4>Número Máscara</H4>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a class="dois" href="https://modavo.com.br/produtos/consulta-numero/">
+            <img src="testepedro/img/consultar.png" class="img-fluid" alt="">
+            <H4>consultar</H4>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--Fim seção CpaaS 2-->
+
+
+  <!--Início seção Utilizações-->
+  <h2>Utilizações</h2>
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <img src="testepedro/img/logistica.png" class="img-fluid" alt="">
+          <h4>Logística</h4>
+
+        </div>
+        <div class="col-md-3">
+
+          <img src="testepedro/img/varejo" class="img-fluid" alt="">
+          <H4>Varejo</H4>
+
+        </div>
+        <div class="col-md-3">
+
+          <img src="testepedro/img/call.png" class="img-fluid" alt="">
+          <H4>Call-Center</H4>
+
+        </div>
+        <div class="col-md-3">
+
+          <img src="testepedro/img/saude.jpg" class="img-fluid" alt="">
+          <H4>Saúde</H4>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Fim seção Utilizações-->
+
+  <!--Início sistema de grid-->
+  <h2>Exemplos</h2>
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"><img src="testepedro/img/c1.jpeg" alt=""></div>
+        <div class="col-md-6"><img src="testepedro/img/c2.jpeg" alt=""></div>
+        <div class="w-100"></div>
+        <div class="col-md-6"><img src="testepedro/img/c3.jpeg" alt=""></div>
+        <div class="col-md-6"><img src="testepedro/img/c4.jpeg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8" style="color: dimgray; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Copyright © 2023 | Pedro,Jefferson,Rafael. Todos os direitos reservados.</div>
+          <div class="col-md-4">
+            <a href= "https://www.facebook.com/TelecallBr" class="btn btn-outline-dark ">
+              <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/telecallbr/" class="btn btn-outline-dark ">
+                <i class="fab fa-instagram"></i>
+              </a>
+                <a href="https://www.linkedin.com/company/telecall/" class="btn btn-outline-dark ">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+          </div>
+      </div>
+    </div>
+  </footer>
+  <!--Fim De Sistema de Grid-->
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS, Depois Ajax-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  
+  
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+  <style>
+    .darkmode-toggle {
+      font-size: 45px !important;
+      width: 23px !important;
+      height: 23px !important;
+    }
+  </style>
+
+
+  <script>
+
+
+
+    const options = {
+      bottom: '64px',
+      right: '32px',
+      left: 'unset',
+      time: '0.5s',
+      mixColor: '#fff',
+      backgroundColor: '#fff',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
+      saveInCookies: false,
+      label: '🌓',
+      autoMatchOsTheme: true
+    }
+
+    function addDarkmodeWidget() {
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+
+      const darkmodeWidget = document.querySelector('.darkmode-toggle');
+      darkmodeWidget.style.position = 'fixed';
+      darkmodeWidget.style.bottom = '12.6%';
+      darkmodeWidget.style.right = '42px';
+      darkmodeWidget.style.zIndex = '9999';
+    }
+
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="testepedro/js/fonte.js"></script>
+
+
+  <script src="JavaScript/cadastro.js"></script>
+  <script src="JavaScript/teste.js"></script>
+
+</body>
+
+</html>

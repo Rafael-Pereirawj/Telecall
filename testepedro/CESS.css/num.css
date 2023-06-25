@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* título Número máscara*/
+#agaum{
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+/*apenas Divisor*/
+
+#titulo{
+    margin-left: 50px;
+
+}
+
+
+
+.Sair{
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+
+.fa-solid {
+    font-size: 24px;
+
+}
+
+ .logado{
+        color: #f0ffff;
+        font-size: 27px;
+    }
+
+
+
+h1{
+    color: #152a47;
+    font-weight: 800;
+    font-family: roboto, sans-serif;
+    text-align: justify;
+    
+}
+
+#barra{
+background-image: linear-gradient(rgb(250, 238, 238), rgb(60, 0, 241));
+
+    &:hover{
+        color: red;
+    }
+}
+
+pre{
+    color: #969393;
+    font: 400;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    color: #152a47;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+/* Título 2FA */
+
+#agadois{
+ font-size: 48px;
+}
+h3{
+    font-size: 30px;
+    text-align: left;
+}
+
+
+/* imagem Tele */
+.iemig{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+p{
+    font-size: 24px;
+    color: #152a47;
+}
+.elementor-divider{
+background-color: #2fade3;
+    padding: 2px;
+    margin-left: 100px;
+    margin: 0px 747.07px 0px 0px;
+    width: 100px;
+    border-right: 1px  ;
+
+}
+ul li{
+    color: #969393;
+    
+}
+.secao3{
+    font: 400;
+    font-size: 26px;
+}

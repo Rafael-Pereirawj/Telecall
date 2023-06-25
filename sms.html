@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark-mode">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Estilo Customizado -->
+  <link rel="stylesheet" href="testepedro/CESS.css/sms.css">
+  
+  <!-- ícone Logo-->
+  <link rel="shortcut icon" href="testepedro/img/logo.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/b2c6b6e86f.js" crossorigin="anonymous"></script>
+
+  <!-- Título do Site-->
+  <title>SMS Programável</title>
+
+</head>
+
+<body id="content">
+  <!-- Início do cabeçalho -->
+  <header>
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="testepedro/img/logotele-removebg-preview.png" width="142px">
+        </a>
+        <div>
+          <button type="button" id="btnAumentar" onclick="this">A+</button>
+          <button type="button" id="btnDiminuir" onclick="this">A-</button>
+        </div>
+
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="2FA.html" class="nav-link">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a href="numero.html" class="nav-link">Número Máscara</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sms programável</a>
+            </li>
+            <li class="nav-item">
+              <a href="verified.html" class="nav-link">google Verified Calls</a>
+            </li>
+            
+
+            
+       
+       
+                   <li class="nav-item" id="login3">
+                     <a href="cadastro.html" class="btn btn-outline-light ml-4">Login</a>
+                   </li>
+       
+       
+           
+          </ul>
+
+        </div>
+
+      </div>
+      <div style="display: flex;">
+        <h2 class="logado" id="logado"></h2>
+        
+        <i onclick='sair()' class="fa-solid fa-right-from-bracket Sair" style="color: #f0ffff; font-size: 1.4em;"></i>
+      </div>
+      
+    </nav>
+
+  </header>
+  <!-- Fim do cabeçalho -->
+
+
+
+  <!--Início da seção-->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+
+
+        <!-- Início textos da seção-->
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h1 class="display-4">Sms Programável</h1>
+      <div class="elementor-divider"></div>
+            <p class="subtitulo">Conecte-se com seus clientes.</p>
+            <pre class="teste">
+  É muito provável que você já tenha recebido u
+  mensagem de texto de uma empresa ou organização. <br>
+  Com uma API, qualquer empresa pode enviar mensagens
+  de texto e impactar clientes, prospects ou fornecedores
+  como parte de seu processo comercial. <br>
+  Com essa ferramenta você envia mensagens de SMS com
+  as informações que o seu cliente precisa e com a
+  segurança, a velocidade e a confiabilidade que você
+  espera.
+              </pre>
+          
+
+            
+                <div class="input-group-append">
+                  <a href="cadastro.html">
+                  <button type="button" class="btn btn-primary">Cadastre-se
+                  </button>
+                </a>
+                </div>
+              </div>
+          </div>
+        
+        <!--Fim Textos da seção-->
+
+        <!--Imagem da seção-->
+        
+        <div class="col-md-6 d-none d-md-block">
+          <img src="testepedro/img/mão-removebg-preview.png" height="10px" class="img-fluid">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fim da seção-->
+
+
+  <!-- Início seção Sms 1-->
+  <section class="caixa">
+    <hr>
+    <div class="container">
+      <div class="row teste">
+            <h2 style="text-align: center;">SMS é a forma mais rápida, eficiente e de baixo custo para se 
+              comunicar com seus clientes.</h2>
+              <div class="col-md-6"><b class="boldi">98%</b> <br> <span>taxa de abertura</span></div>
+              <div class="col-md-6"><b class="boldi">90% </b><br> <span>dos SMS são lidos em
+                até 3 minutos.</span></div>
+              <div class="w-100"></div>
+              <div class="col-md-6"><b class="boldi">80%</b> <br> <span>das pessoas interagem
+                com SMS comerciais.</span></div>
+              <div class="col-md-6"><b class="boldi">35x</b> <br> <span>maior a probabilidade de um
+                cliente abrir um SMS do que
+                um e-mail.</span>
+              </div>
+
+            
+      </div>
+    </div>
+  </section><!-- Fim seção Sms 1-->
+
+
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="hr">
+          <h2 id="agadois">QUEM USA?</h2>
+          <div class="elementor-divider"></div>
+        </div>
+        <div class="col-md-3">
+          <img src="testepedro/img/cel1.jpeg" class="img-fluid">
+ 
+</div>
+<div class="col-md-3">
+  <img src="testepedro/img/cel2.jpeg" class="img-fluid" alt="">
+  
+</div>
+<div class="col-md-3">
+  <img src="testepedro/img/cel3.jpeg" class="img-fluid" alt="">
+ 
+
+</div>
+<div class="col-md-3">
+  <img src="testepedro/img/cel4.jpeg" class="img-fluid" alt="">
+  
+</div>
+
+
+</div>
+</div>
+</section>
+<!--Fim seção celulares-->
+
+<!--motoboy Seção-->
+<br>
+  
+  <section class="caixa">
+    <div class="container">
+      <h2 class="servicos">Jornada do cliente</h2>
+  <div class="elementor-divider"></div>
+      <div class="row">
+
+        <div class="col-md-12">
+<img src="testepedro/img/motoboy.jpeg" alt="">
+        </div>
+          
+
+      </div>
+    </div>
+  </section>
+  <!--Fim seção motoboy-->
+
+
+  <!--Início seção Benefícios-->
+<section class="caixa">
+  <div class="container">
+    <hr>
+    <h2 id="agadois">Benefícios</h2>
+    <div class="elementor-divider"></div>
+    <div class="row">
+      <ul class="secao3 teste">
+        <li>Comunicação rápida, efetiva e escalável.</li>
+        <li>Baixo Custo</li>
+        <li>Alta taxa de entrega e leitura.</li>
+        <li>Personalização de data, hora e conteúdo.</li>
+        <li> Agendamento de campanhas.</li>
+        <li>Interação bidirecional: recebimento de respostas
+        </li>
+        <li>Plataforma user-friendly.
+        </li>
+        <li>Acompanhamento de métricas e relatórios.</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+<!--Fim seção benefícios-->
+
+  <footer class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8" style="color: dimgray; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Copyright © 2023 | Pedro,Jefferson,Rafael. Todos os direitos reservados.</div>
+          <div class="col-md-4">
+            <a href= "https://www.facebook.com/TelecallBr" class="btn btn-outline-dark ">
+              <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/telecallbr/" class="btn btn-outline-dark ">
+                <i class="fab fa-instagram"></i>
+              </a>
+                <a href="https://www.linkedin.com/company/telecall/" class="btn btn-outline-dark ">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+          </div>
+      </div>
+    </div>
+  </footer>
+  <!--Fim De Sistema de Grid-->
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS, Depois Ajax-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+  <style>
+    .darkmode-toggle {
+      font-size: 45px !important;
+      width: 23px !important;
+      height: 23px !important;
+    }
+  </style>
+
+
+  <script>
+
+
+
+    const options = {
+      bottom: '64px',
+      right: '32px',
+      left: 'unset',
+      time: '0.5s',
+      mixColor: '#fff',
+      backgroundColor: '#fff',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
+      saveInCookies: false,
+      label: '🌓',
+      autoMatchOsTheme: true
+    }
+
+    function addDarkmodeWidget() {
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+
+      const darkmodeWidget = document.querySelector('.darkmode-toggle');
+      darkmodeWidget.style.position = 'fixed';
+      darkmodeWidget.style.bottom = '12.6%';
+      darkmodeWidget.style.right = '42px';
+      darkmodeWidget.style.zIndex = '9999';
+    }
+
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="testepedro/js/fonte.js"></script>
+
+  <script src="JavaScript/cadastro.js"></script>
+  <script src="JavaScript/teste.js"></script>
+
+
+</body>
+
+</html>

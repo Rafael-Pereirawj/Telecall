@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <script src="https://kit.fontawesome.com/b2c6b6e86f.js" crossorigin="anonymous"></script>
+     
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+     <title>Telecall</title>
+     <link rel="stylesheet" href="css/cadastro.css">
+     <a href="teste.html"></a>
+     
+
+</head>
+
+<body>
+
+     <header class="header">
+          <div class="container1">
+              <div class="navbar">
+                  <div class="logo">
+                      <a href="index.html">
+                          <img src="img/logo.png">
+                      </a>
+                  </div>
+                  <nav>
+                      <ul class="main_menu">
+                          <li><a href="index2.html"><strong>Home</strong></a></li>
+                          <li><a href="index2.html"><strong>Plataforma Cpass</strong></a>
+                          </li>
+                          <li><a href="#"><strong>Serviços</strong></a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="common_btn">
+                      <a href="index.html">Inicio</a>
+                  </div>
+                  <div class="mobile-menu-icon">
+                    <button onclick="menushow()"><img class="icon" src="img/menu.png" alt=""></button>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="main_menu">
+                    <li><a href="#"><strong>Home</strong></a></li>
+                    <li><a href="#"><strong>Plataforma Cpass</strong></a>
+                        <ul class="sub_menu">
+                         <li><a href="index2.html">Cpass</a></li>
+                         <li><a href="2FA.html">2FA</a></li>
+                         <li><a href="numero.html">Numero Mascara</a></li>
+                         <li><a href="verified.html">Google Verifield Calls</a></li>
+                         <li><a href="sms.html">Sms Programável</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>Serviços</strong></a>
+                        <ul class="sub_menu">
+                         <li><a href="#">Telefonia</a></li>
+                         <li><a href="#">internet</a></li>
+                         <li><a href="#">Infraestrurura e rede</a></li>
+                         <li><a href="#">Mobilidade</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </header>
+
+     <div class="container">
+          <div class="content first-content">
+               <div class="first-column">
+                    <h2 class="title title-primary">Bem-vindo de volta!</h2>
+                    <p class="description description-primary">Para acessar o seu usuário</p>
+                    <p class="description description-primary">Faça o login usando o seu dados</p>
+                    <button id="signin" class="btn btn-primary">Faça o login</button>
+               </div>
+               
+               
+               <div class="second-column">
+                    <h2 class="title title-second">Cadastro</h2>
+                    <div class="social-media">
+                         <ul class="list-social-media">
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media ">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                   </li>
+                              </a>
+
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                   </li>
+                              </a>
+
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                   </li>
+                              </a>
+
+                         </ul>
+                    </div><!-- social media  -->
+                    <p class="description description-second">Preencha com os seus dados pessoais</p>
+                    <form class="form" id="form">
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-user icon-modify"></i>
+                              <input type="text" placeholder="Nome" id="nome" required minlength="15" maxlength="60" onKeyUp="validarNome(this)">
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                              
+                         </label>
+                         
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-user icon-modify"></i>
+                              <input type="text" placeholder="Nome Materno" id="nomeMaterno" required minlength="15" maxlength="60" onKeyUp="validarNomeMaterno(this)">
+                              
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                            </label>
+
+
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-address-card icon-modify"></i>
+                              <input type="text" placeholder="Cpf" id="cpf" required maxlength="14" onkeydown="ajustaCpf(this)" onkeypress="ajustaCpf(this)" onkeyup="ajustaCpf(this)">
+                              
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                         </label>
+
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-phone icon-modify"></i>
+                              <input type="text" placeholder="Telefone Celular " id="telefone" required maxlength="15" onkeydown="ajustaTelefone(this)" onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)">
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                         </label>
+
+
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-phone icon-modify"></i>
+                              <input type="text" placeholder="Telefone Fixo" id="telefoneFixo" required maxlength="14" onkeydown="ajustaTelefone(this)" onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)">
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                         </label>
+
+                         
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-house icon-modify"></i>
+                              <input type="text" placeholder="Cep" id="cep" required maxlength="9" oninput="formatarCep(this)" onkeypress="return validarNumeros(event)">
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                            </label>
+                            
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-envelope icon-modify"></i>
+                              <input type="email" placeholder="Email" id="email" required>
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                         </label>
+
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-user icon-modify"></i>
+                              <input type="text" placeholder="Login" id="login" required maxlength="6" oninput="validarLetras(this)">
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                         </label>
+                            
+
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-calendar-days icon-modify"></i>
+                              <input type="text" placeholder="Data de Nascimento" id="data" required maxlength="10" onkeydown="ajustaData(this)" onkeypress="ajustaData(this)" onkeyup="ajustaData(this)">
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                            </label>
+                            
+
+
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-venus-mars icon-modify"></i>
+                              <select id="sexo" name="sexo" required>
+                                <option value="" selected disabled>Selecione o sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                              </select>
+                            </label>
+
+                            <label class="label-input" for="">
+                              <i class="fa-solid fa-lock icon-modify"></i>
+                              <input type="password" placeholder="Senha"  maxlength="8" id="senha1" oninput="validarLetras(this)">
+                              <button class="toggle-senha" onclick="toggleSenhaVisibility('senha1')">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                            </label>
+                            
+                            <label class="label-input" for="">
+                              <i class="fa-solid fa-lock icon-modify"></i>
+                              <input type="password" placeholder="Confirmar senha" maxlength="8"  id="senha2" oninput="validarLetras(this)">
+                              <button class="toggle-senha" onclick="toggleSenhaVisibility('senha2')">
+                                <i class="fa-solid fa-eye"></i>
+                              </button>
+                              <div class="itens1">
+                                <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                              </div>
+                              <div class="itens2">
+                                <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                              </div>
+                            </label>
+                            <a class="password" href="index.html">Retornar a página inicial</a>
+                         <button onclick="cadastrar()" class="btn btn-second">Cadastrar-se</button>
+                         
+
+
+
+                         
+                    </form>
+                    
+
+
+               </div><!-- second column -->
+          </div><!-- first-column -->
+          <div class="content second-content">
+               <div class="first-column">
+                    <h2 class="title title-primary">Ola, Amigo</h2>
+                    <p class="description description-primary">Ainda não tem um cadastro ?</p>
+                    <p class="description description-primary">É simples, clique no botão abaixo</p>
+                    <button id="signup"class="btn btn-primary">Cadastrar-se</button>
+                    
+               </div>
+               <div class="second-column">
+                    <h2 class="title title-second">Login</h2>
+                    <div class="social-media">
+                         <ul class="list-social-media">
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media ">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                   </li>
+                              </a>
+
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                   </li>
+                              </a>
+
+                              <a class="link-social-media " href="#">
+                                   <li class="item-social-media">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                   </li>
+                              </a>
+
+                         </ul>
+                    </div><!-- social media  -->
+                    <p class="description description-second">Utilize a sua conta para efetuar o login</p>
+                    <form class="form">
+
+                         <label class="label-input " for="">
+                              <i class="fa-solid fa-user icon-modify"></i>
+                              <input type="text" placeholder="Login" id="loginFim" maxlength="6">
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                                
+                         </label>
+                         <label class="label-input" for="">
+                              <i class="fa-solid fa-lock icon-modify"></i>
+                              <input type="password" placeholder="Senha" id="senhaFim">
+                              <div class="itens1">
+                                   <i><img class="img-sucesso" src="img/success-icon.svg" alt=""></i>
+                                   </div>
+                                   <div class="itens2">
+                                   <i><img class="img-error" src="img/error-icon.svg" alt=""></i>
+                                   </div>
+                         </label>
+                         <a class="password" href="index.html">Retornar a página inicial</a>
+
+                    </form>
+                    <button class="btn btn2" onclick="entra()" >logar</button>
+               </div><!-- second column -->
+          </div><!-- second-content -->
+
+     </div>
+
+<!-- Modal -->
+<div class="conteiner2">
+     <button class="popup-button" type="submit" onclick="handlepopup(true)">Cadastra</button>
+     <div class="popup" id="popup">
+       <img src="/img/success-icon.svg" class="Img" alt="">
+       <h2 class="titulo"><strong>Cadastro realizado com sucesso!</strong></h2>
+       <p class="desc">Clique no botão abaixo para efetuar o login</p>
+       <button class="close-popup" type="submit" onclick="handlepopup(false)" id="signin2">Logar</button>
+     </div>
+   </div>
+
+     <script src="JavaScript/cadastro.js"></script>
+     <script src="JavaScript/teste.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="JavaScript/carrossel.js" defer></script>
+    <script src="JavaScript/cadastro.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Telecall</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="main_menu">
+                        <li><a href="index2.html"><strong>Home</strong></a></li>
+                        <li><a href="#"><strong>Plataforma Cpass</strong></a>
+                            <ul class="sub_menu">
+                                <li><a href="index2.html">Cpass</a></li>
+                                <li><a href="2FA.html">2FA</a></li>
+                                <li><a href="numero.html">Numero Mascara</a></li>
+                                <li><a href="verified.html">Google Verifield Calls</a></li>
+                                <li><a href="sms.html">Sms Programável</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><strong>Serviços</strong></a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Telefonia</a></li>
+                                <li><a href="#">internet</a></li>
+                                <li><a href="#">Infraestrurura e rede</a></li>
+                                <li><a href="#">Mobilidade</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="logado" id="logado"></h2>
+                <i  onclick='sair()' class="fa-solid fa-right-from-bracket Sair" style="color: #f0ffff; font-size: 1.4em;"></i>
+                <div class="common_btn" id="login3">
+                    <a href="cadastro.html"><strong>Login</strong></a>
+                </div>
+
+               
+                <div class="Aa" >
+                    <button type="button" id="btnAumentar">A+</button>
+                    <button type="button" id="btnDiminuir">A-</button>
+                 </div>
+            
+                <div class="mobile-menu-icon">
+                    <button onclick="menushow()"><img class="icon" src="img/menu.png" alt=""></button>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="main_menu">
+                    <li><a href="#"><strong>Home</strong></a></li>
+                    <li><a href="#"><strong>Plataforma Cpass</strong></a>
+                        <ul class="sub_menu">
+                            <li><a href="index2.html">Cpass</a></li>
+                            <li><a href="2FA.html">2FA</a></li>
+                            <li><a href="numero.html">Numero Mascara</a></li>
+                            <li><a href="verified.html">Google Verifield Calls</a></li>
+                            <li><a href="sms.html">Sms Programável</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>Serviços</strong></a>
+                        <ul class="sub_menu">
+                            <li><a href="#">Telefonia</a></li>
+                                <li><a href="#">internet</a></li>
+                                <li><a href="#">Infraestrurura e rede</a></li>
+                                <li><a href="#">Mobilidade</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
+
+
+                
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- Fim Menu -->
+
+
+    <!-- Carrossel -->
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="slide1">
+            <input type="radio" name="btn-radio" id="slide2">
+            <input type="radio" name="btn-radio" id="slide3">
+            <input type="radio" name="btn-radio" id="slide4">
+
+            <div class="slide primeiro">
+                <a href=""><img src="./img/slide1.png" alt=""></a>
+            </div>
+
+            <div class="slide">
+                <a href=""><img src="./img/slide2.png" alt=""></a>
+            </div>
+
+            <div class="slide">
+                <a href="#"><img src="./img/slide3.png" alt=""></a>
+            </div>
+
+            <div class="slide">
+                <a href=""><img src="./img/slide4.png" alt=""></a>
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <div class="nav-manual">
+                <label class="manual-btn" for="slide1"></label>
+                <label class="manual-btn" for="slide2"></label>
+                <label class="manual-btn" for="slide3"></label>
+                <label class="manual-btn" for="slide4"></label>
+            </div>
+        </div>
+    </section>
+    <!-- Final do carrossel -->
+
+
+    <!-- teste  -->
+    <section class="anuncio">
+        <span>Especialista Em Solução De Comunicação</span>
+        <hr>
+    </section>
+
+    <section>
+        <div class="serviço">
+            <img class="internet" src="img/internet.png" alt="">
+            <img class="telefonia" src="img/telefonia.png" alt="">
+            <img class="rede" src="img/infraestrutura.png" alt="">
+            <img class="mobilidade" src="img/celular_red.png" alt="">
+        </div>
+    </section>
+
+    <section class="cpass">
+        <span>Inovação Com A Plataforma CPASS</span>
+        <hr>
+
+    </section>
+
+    <section>
+        <div class="cpass1">
+            <img class="fa" src="img/2fa.PNG" alt="">
+            <img class="mascara" src="img/mascara numero.PNG" alt="">
+            <img class="google" src="img/google.PNG" alt="">
+            <img class="sms" src="img/sms.PNG" alt="">
+        </div>
+    </section>
+    <div class="bloco-mapa">
+        <section class="mapa">
+            <span>Presente Em Todo Rio de Janeiro</span>
+            <hr>
+        </section>
+
+        <section class="mapa1">
+            <img src="img/mapa.png" alt="">
+        </section>
+
+    <div>
+        <section class="bloco-parceiros">
+            <span>Empresas Que Confiaram Em Nossos Serviços</span> <hr>
+        </section>
+
+        <section class="parceiros1">
+            <img src="img/parceiros.png" alt="">
+        </section>
+    </div>
+
+        <!-- teste  -->
+
+        <!-- Rodape  -->
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="img/logo-hdr.png">
+                    <p>A melhor internet do Rio de Janeiro</p>
+
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Plataforma Cpass</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">2FA</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Numero Mascara</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Google Verifield Calls</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">SMS Programável</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Serviços</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Internet</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Telefonia</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Rede e Infraestrutura</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Mobilidade</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="footer_copyright">
+                &#169
+                2023 all rights reserved / by Jefferson - Rafael - Pedro
+            </div>
+        </footer>
+        <!-- Rodape  -->
+
+    </div>
+    <script src="JavaScript/mobile.js"></script>
+    <script src="JavaScript/mobilidade.js"></script>
+    <script src="JavaScript/teste.js" ></script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  
+    <style>
+        .darkmode-toggle {
+          font-size: 45px !important;
+          width: 23px !important;
+          height: 23px !important;
+        }
+      </style>
+    
+    
+      <script>
+    
+    
+    
+        const options = {
+          bottom: '64px',
+          right: '32px',
+          left: 'unset',
+          time: '0.5s',
+          mixColor: '#fff',
+          backgroundColor: '#fff',
+          buttonColorDark: '#100f2c',
+          buttonColorLight: '#fff',
+          saveInCookies: false,
+          label: '🌓',
+          autoMatchOsTheme: true
+        }
+    
+        function addDarkmodeWidget() {
+          const darkmode = new Darkmode(options);
+          darkmode.showWidget();
+    
+          const darkmodeWidget = document.querySelector('.darkmode-toggle');
+          darkmodeWidget.style.position = 'fixed';
+          darkmodeWidget.style.bottom = '12.6%';
+          darkmodeWidget.style.right = '42px';
+          darkmodeWidget.style.zIndex = '9999';
+        }
+    
+        window.addEventListener('load', addDarkmodeWidget);
+      </script>
+    
+
+
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark-mode">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Estilo Customizado -->
+  <link rel="stylesheet" href="2fa.css">
+
+  <!-- ícone Logo-->
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+  <!-- Título do Site-->
+  <title>2FA</title>
+
+</head>
+
+<body id="content">
+  <!-- Início do cabeçalho -->
+  <header>
+    <nav id="barra" class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+
+        <h2 class="logado" id="logado"></h2>
+        <i  onclick='sair()' class="fa-solid fa-right-from-bracket Sair" style="color:black; font-size: 1.4em;"></i>
+        
+   
+
+
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logotele-removebg-preview.png" width="142px">
+        </a>
+        <button type="button" id="btnAumentar" onclick="">A+</button>
+        <button type="button" id="btnDiminuir" onclick="">A-</button>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a href="numero.html" class="nav-link">Número Máscara</a>
+            </li>
+            <li class="nav-item">
+              <a href="sms.html" class="nav-link">Sms programável</a>
+            </li>
+            <li class="nav-item">
+              <a href="verified.html" class="nav-link">google Verified Calls</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="btn btn-outline-light ml-4">Login</a>
+            </li>
+            <label for="switch">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </label>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- Fim do cabeçalho -->
+
+
+
+  <!--Início da seção-->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+
+        <!-- Início textos da seção-->
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h1 class="display-4"> <b>2FA-AUTENTICAÇÃO DE DOIS FATORES</b>
+            </h1>
+            <h2>Two-Factor Authentication | Autenticação de dois fatores</h2>
+            <p>
+              <br>
+              O 2FA é um procedimento de segurança que garante que serão
+              necessários 2 fatores únicos para liberação de uma ação. O
+              primeiro fator é a senha que o usuário e o segundo pode ser
+              autenticado via token, via detecção de impressão digital,
+              reconhecimento facial, código enviado via sms, entre outros. <br><br>
+              <span>O 2FA permite que você:</span> <br>
+            <ul>
+              <li>Envie uma senha via SMS, voz ou e-mail para autenticação do usuário.</li>
+              <li>Adicione uma camada extra de segurança além da senha pessoal.</li>
+              <li>Ofereça maior segurança para usuários.</li>
+            </ul>
+          </div>
+        </div>
+        <!--Fim Textos da seção-->
+
+        <!--Imagem da seção-->
+        <div class="col-md-6 d-none d-md-block">
+          <img src="img/2fa-image-removebg-preview.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fim da seção-->
+
+  <!-- Início seção 2FA 1-->
+  <hr class="hr">
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex">
+          <div class="align-self-center">
+            <h2 id="agadois">2FA</h2>
+            <div class="elementor-divider"></div> <br>
+
+            <h3> Fortaleça a estratégia de segurança de seu negócio.</h3>
+
+            <p>Ao Adicionar um número de telefone de recuperação a uma
+              conta individual pode bloquear até:</p>
+
+            <h2> <b class="boldi">100%</b> dos bots automatizados, <br>
+              <b class="boldi">99%</b> dos ataques de phishing em massa, <br>
+              e <b class="boldi">66%</b> dos ataques direcionados.
+            </h2>
+            </p>
+            <a href="https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html">*Fonte: Google
+              Security Blog
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/logotele-removebg-preview.png" class="iemig">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- Fim seção 2FA 1-->
+
+  <!--Início Seção 2FA 2-->
+  <section class="caixa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="hr">
+          <h2 id="agadois">Como funciona?</h2>
+          <div class="elementor-divider"></div>
+        </div>
+        <div class="col-md-3">
+          <img src="img/Captura_da_Web_14-6-2023_12259_-removebg-preview.png" class="img-fluid">
+          <p>Usuário <b>acessa seu site o
+              aplicativo</b> e digita a senha
+            cadastrada para entrar em
+            seu perfil ou completar uma
+            transação.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/segurança2.png" class="img-fluid" alt="">
+          <p>A Telecall recebe a tentativa
+            de login e solicita que o
+            usuário <b>insira seu número de
+              telefone</b> para autorizar o
+            acesso.</p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/seg4.png" class="img-fluid" alt="">
+          <p>Após inserir seu número, a
+            Telecall <b>envia para o usuário</b>
+            por SMS, chamada ou e-mail
+            um <b>código PIN</b> de uso único. <br>
+
+            Esse código PIN é também
+            conhecido como OTP (One
+            Time Password).
+          </p>
+
+        </div>
+        <div class="col-md-3">
+          <img src="img/segurança4.png" class="img-fluid" alt="">
+          <p>O usuário <b>insere o código</b> no
+            site ou aplicativo para
+            concluir o processo de
+            verificação.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--Fim seção 2FA 2-->
+
+
+  <!-- Início seção 2FA 3-->
+  <hr class="hr">
+
+  <section class="caixa">
+
+    <div class="container">
+      <h2 id="agadois">Benefícios</h2>
+      <div class="elementor-divider"></div>
+      <div class="row">
+        <ul class="secao3">
+          <li>Ofereça <b>segurança aprimorada</b> para seus clientes.</li>
+          <li>Reduza casos de <b>fraude e invasões</b> e evite o acesso a dados por invasores.</li>
+          <li>Envio de OTP por meio de <b>vários canais,</b> incluindo SMS, voz ou e-mail.</li>
+          <li><b>Flexibilidade</b> de canais garante que o usuário conseguirá completar a tarefa desejada
+            mesmo quando tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso de
+            falha, enviar OTP por chamada de voz, em caso de outra falha, enviar por e-mail.</li>
+          <li> API simples e de <b>rápida implementação.</b></li>
+          <li><b>Plataforma intuitiva</b> que permite visualizar relatórios de uso por dia, mês ou ano e
+            pesquisar usando diversos critérios de filtro.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <hr class="hr">
+  <!--Fim seção CpaaS 2-->
+
+
+  <!--Início seção Utilizações-->
+  
+  <section class="caixa">
+    <div class="container">
+      <h2 id="agadois">Utilizações</h2>
+  <div class="elementor-divider"></div>
+      <div class="row">
+        <div class="col-md-2">
+
+          <img src="img/logistica.png" class="img-fluid" alt="">
+          <h4>Finanças</h4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Autenticação para transações bancárias </li>
+            <li>Pagamentos Online</li>
+            <li>Digital Wallets</li>
+          </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <img src="img/varejo" class="img-fluid" alt="">
+          <H4>Saúde</H4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Agendamentos</li>
+            <li>Tokens de autorização</li>
+            <li>Telemedicina</li>
+          </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <img src="img/call.png" class="img-fluid" alt="">
+          <H4>Turismo</H4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Gestão de Reservas</li>
+            <li>Acesso ao histórico</li>
+            <li>Salvar dados de pagamentos</li>
+            <li>Recuperação de senha</li>
+          </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <img src="img/saude.jpg" class="img-fluid" alt="">
+          <H4>Varejo</H4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Salvar dados de pagamentos</li>
+            <li>Acesso ao histórico</li>
+            <li>Recuperação de senha</li>
+            <li>Recibo Eletrônico</li>
+          </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <img src="img/saude.jpg" class="img-fluid" alt="">
+          <H4>Logística</H4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Salvar dados de pagamentos</li>
+            <li>Acesso ao histórico</li>
+            <li>Salvar dados de pagamentos</li>
+            <li>Recuperação de senha</li>
+          </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <img src="img/saude.jpg" class="img-fluid" alt="">
+          <H4>Governo</H4>
+          <ul>
+            <li>Acesso ao portal/app</li>
+            <li>Gestão de informações</li>
+            <li>Agendamentos</li>
+            <li>Recuperação de senha</li>
+          </ul>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Fim seção Utilizações-->
+
+  <footer class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" style="color: dimgray; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
+          Copyright © 2023 | Pedro,Jefferson,Rafael. Todos os direitos reservados.</div>
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/TelecallBr" class="btn btn-outline-dark ">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/telecallbr/" class="btn btn-outline-dark ">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/telecall/" class="btn btn-outline-dark ">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Fim De Sistema de Grid-->
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS, Depois Ajax-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/fonte.js"></script>
+  <script src="/JavaScript/cadastro.js"></script>
+  <script src="/JavaScript/teste.js"></script>
+  <script src="https://kit.fontawesome.com/b2c6b6e86f.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
